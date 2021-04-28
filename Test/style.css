@@ -7,6 +7,31 @@ html, body {
     color: #FFFFFF;
 }
 
+.container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 768px) {
+.container {
+    width: 750px;
+}
+}
+
+@media (min-width: 992px) {
+.container {
+    width: 970px;
+}
+}
+
+@media (min-width: 1200px) {
+.container {
+    width: 1170px;
+}
+}
+
 .heading-dark {
     position: relative;
 
@@ -51,8 +76,88 @@ html, body {
     font-weight: normal;
     font-size: 1rem;
     line-height: 150%;
+    padding-top: 1rem;
 
     color: #555555;
+}
+
+.row {
+    /* height: 90vh; */
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1rem 1rem; 
+}
+
+.column {
+    color: #FFFFFF;
+    font-size: 3rem;
+    padding: 0;
+}
+
+.column-1 {
+    background: #FFFFFF;
+}
+
+.column-2 {
+    background: #FFFFFF;
+}
+
+.row-gradient {
+    /* height: 90vh; */
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1rem 1rem; 
+}
+
+.column-gradient {
+    color: #FFFFFF;
+    font-size: 3rem;
+    padding: 0;
+}
+
+.column-1-gradient {
+    background: #FFFFFF;
+}
+
+.column-2-gradient {
+    background: #FFFFFF;
+}
+
+.column-3-gradient {
+    background: #FFFFFF;
+    grid-row: 1/2; 
+    grid-column: 2; 
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+	display: flex;
+	max-width: 100%;
+    border-radius: 1rem;
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
+.card-img {
+    border-radius: 1rem 0 0 1rem;
+    text-align: left;
+    width: 100%;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.card-body {
+    padding: 0 1rem;
+    width: 100%;
 }
 
 .card-title {
@@ -66,14 +171,11 @@ html, body {
 
     color: #555555;
 
-
-    /* Inside Auto Layout */
-
-    flex: none;
+    /* flex: none;
     order: 0;
     align-self: stretch;
     flex-grow: 0;
-    margin: 1rem 0;
+    margin: 1rem 0; */
 }
 
 .card-text {
@@ -87,31 +189,21 @@ html, body {
 
     color: #555555;
 
-
-    /* Inside Auto Layout */
-
-    flex: none;
+    /* flex: none;
     order: 1;
     align-self: stretch;
     flex-grow: 0;
-    margin: 1rem 0;
+    margin: 1rem 0; */
 }
 
-
-.joined-cards div.card {
-    margin: 0;
+.circle-img {
+    border-radius: 50%;
 }
 
-.joined-cards {
-    border-radius: 1rem;
-}
+.rotated {
+    left: calc(50% - 1649.45px/2 - 14.27px);
 
-.joined-cards .card.ctop {
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-}
-
-.joined-cards .card.cbottom {
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
+    background: linear-gradient(180deg, #0078BC 0%, #A9FFC1 100%);
+    /* background: linear-gradient(#0078BC, #A9FFC1); */
+    transform: rotate(-3.5deg);
 }
