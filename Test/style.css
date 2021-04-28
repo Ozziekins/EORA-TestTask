@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:wght@100;300;400;500;700&display=swap');
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+}
+
+.heading-dark {
+    position: relative;
+
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3rem;
+    line-height: 120%;
+
+    color: #333333;
+}
+
+.heading-light {
+    position: relative;
+
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3rem;
+    line-height: 120%;
+
+    color: #FFFFFF;
+}
+
+.small-text {
+    position: relative;
+
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.125rem;
+    line-height: 120%;
+
+    color: #555555;
+}
+
+.footer-text {
+    position: relative;
+
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 150%;
+
+    color: #555555;
+}
+
+.card-title {
+    position: relative;
+
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 120%;
+
+    color: #555555;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 1rem 0;
+}
+
+.card-text {
+    position: relative;
+
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.938rem;
+    line-height: 150%;
+
+    color: #555555;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 1rem 0;
+}
+
+
+.joined-cards div.card {
+    margin: 0;
+}
+
+.joined-cards {
+    border-radius: 1rem;
+}
+
+.joined-cards .card.ctop {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.joined-cards .card.cbottom {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
