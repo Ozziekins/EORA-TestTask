@@ -7,6 +7,78 @@ html, body {
     color: #FFFFFF;
 }
 
+.container-white {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 768px) {
+.container-white {
+    width: 750px;
+}
+}
+
+@media (min-width: 992px) {
+.container-white {
+    width: 970px;
+}
+}
+
+@media (min-width: 1200px) {
+.container-white {
+    width: 1170px;
+}
+}
+
+.full-background {
+    margin: 0;
+    padding: 0;
+    left: calc(50% - 1649.45px/2 - 14.27px);
+
+    background: linear-gradient(180deg, #0078BC 0%, #A9FFC1 100%);
+    /* background: linear-gradient(#0078BC, #A9FFC1); */
+    /* transform: rotate(-3.5deg); */
+}
+
+.full-background:after {
+    position: relative;
+    content: '';
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: #FFFFFF;
+    -webkit-clip-path: circle(50% 20% at 50% 0%);
+    clip-path: circle(50% 20% at 50% 5%);
+  }
+
+.container-gradient {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 768px) {
+.container-gradient {
+    width: 750px;
+}
+}
+
+@media (min-width: 992px) {
+.container-gradient {
+    width: 970px;
+}
+}
+
+@media (min-width: 1200px) {
+.container-gradient {
+    width: 1170px;
+}
+}
+
 .container {
     padding-right: 1rem;
     padding-left: 1rem;
@@ -91,46 +163,17 @@ html, body {
 }
 
 .column {
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
     font-size: 3rem;
     padding: 0;
 }
 
 .column-1 {
-    background: #FFFFFF;
+    /* background: #FFFFFF; */
 }
 
 .column-2 {
-    background: #FFFFFF;
-}
-
-.row-gradient {
-    /* height: 90vh; */
-    margin: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 1rem 1rem; 
-}
-
-.column-gradient {
-    color: #FFFFFF;
-    font-size: 3rem;
-    padding: 0;
-}
-
-.column-1-gradient {
-    background: #FFFFFF;
-}
-
-.column-2-gradient {
-    background: #FFFFFF;
-}
-
-.column-3-gradient {
-    background: #FFFFFF;
-    grid-row: 1/2; 
-    grid-column: 2; 
+    /* background: #FFFFFF; */
 }
 
 .card {
@@ -158,6 +201,8 @@ html, body {
 .card-body {
     padding: 0 1rem;
     width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 0 1rem 1rem 0;
 }
 
 .card-title {
